@@ -1,0 +1,28 @@
+/*------------Global Styles----------------*/
+header {
+    background-color: grey;
+}
+
+
+
+/*----------------Header---------------*/
+
+.logo {
+    background-color: red;
+    display: block;
+}
+
+.logo img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.nav-main {
+    text-align: center;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.nav-soc img {
+    width: 50px;
+}
