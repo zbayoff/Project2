@@ -14,80 +14,104 @@
 <body>
 
     <!----START MASTHEAD---->
-    <header class="container" role="banner">
 
+    <div class="container-fluid ">
         <div class="row">
-
-            <section class="logo col-sm-3">
-                <p>
-                    <a href="index.html"><img src="assets/img/cropped-logo-700.png"/></a>
+            <nav class="main-nav nav justify-content-center nav-pills nav-fill navbar-default">
+            <section class="col-lg-2 logo">
+                <p class="logo">
+                    <a href="index.html"><img src="assets/img/cropped-logo-700.png" /></a>
                 </p>
             </section>
 
-            <section class="col-sm-5">
-                <nav role="navigation" class="nav-main">
+            <section class="col-lg-6">
+                <!--                    <nav role="navigation" class="navbar navbar-default">-->
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Programs</a>
-                        </li>
-                        <li>
-                            <a href="#">Events</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
-                    </ul>
 
-                </nav>
+                
+
+                    <a href="#" class="nav-link nav-item">Home</a>
+                    <a href="#" class="nav-link nav-item">About</a>
+                    <a href="#" class="nav-link nav-item">Programs</a>
+                    <a href="#" class="nav-link nav-item">Events</a>
+                    <a href="#" class="nav-link nav-item">News</a>
+                   
+                    <!--
+                        <ul class="nav nav-justified">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Programs</a>
+                            </li >
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">News</a>
+                            </li>
+                        </ul>
+-->
+
+                
             </section>
 
-            <section class="col-sm-4">
-                <div>
-                    <a href="#">join/login</a>
+            <section class="utilities-main col-lg-4">
+                <div class="row">
+                    <div class="col-lg-3 join-login">
+                        <div>
+                            <a href="#">join/login</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 search-bar">
+                        <div>
+                            <form method="post" action="#" class="navbar-form">
+                                <input type="search" name="search">
+                                <button><img src="assets/img/magnifying-glass.png"></button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div>
-                    <a href="#">contact</a>
+                <div class="row">
+                    <div>
+                        <a href="#">contact</a>
+                    </div>
+                    <nav role="navigation" class="nav-soc">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#"><img src="assets/img/social/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/img/social/instagram.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/img/social/square-linkedin-512.png"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button>Donate</button>
                 </div>
 
-                <div>
-                    <form method="post" action="#" class="navbar-form">
-                        <input type="search" name="search">
-                        <input type="submit">
-                    </form>
-                </div>
-
-                <button>Donate</button>
-
-                <nav role="navigation" class="nav-soc">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#"><img src="assets/img/social/facebook.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="assets/img/social/instagram.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="assets/img/social/square-linkedin-512.png"></a>
-                        </li>
-                    </ul>
-                </nav>
             </section>
+                </nav>
         </div>
-    </header>
+
+
+    </div>
+
     <!--------------END MASTHEAD--------->
 
 
     <!----START MAIN---->
-    <main role="main">
-        <section class="">
+
+    <section class="full-background">
+        <div class="main-content">
             <h1>New York Junior Tennis League</h1>
 
             <h2>Helping Thousands of NYC kids Get Involved in Tennis!</h2>
@@ -96,89 +120,90 @@
 
             <ul class="pagination_main">
                 <li>
-                    <a href="#"></a>
+                    <a href="#">&bull;</a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">&bull;</a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">&bull;</a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">&bull;</a>
                 </li>
             </ul>
+        </div>
+    </section>
 
+
+    <section>
+        <h2>Who We Are</h2>
+
+        <h3> We're a team of enthusiastic tennis players who spend time teaching New York City kids to love and enjoy the great game of tennis.</h3>
+
+        <button>Learn More</button>
+
+    </section>
+
+    <section>
+        <h2>Who We Do</h2>
+
+        <ul>
+            <li>
+                <a href="#"><img src=""></a>
+            </li>
+            <li>
+                <a href="#"><img src=""></a>
+            </li>
+            <li>
+                <a href="#"><img src=""></a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>Get Involved</h2>
+
+        <section>
+            <h3>Stay up to date with our current news and upcoming events by signing up for our mailing list.</h3>
+
+            <div>
+                <form method="post" action="#">
+                    <input type="search" name="search">
+                    <input type="submit" value="sign up">
+                </form>
+            </div>
         </section>
 
         <section>
-            <h2>Who We Are</h2>
+            <h3>Make a one-time or recurring donation to our program. Any amount helps!</h3>
+            <button>Donate</button>
+        </section>
 
-            <h3> We're a team of enthusiastic tennis players who spend time teaching New York City kids to love and enjoy the great game of tennis.</h3>
-
+        <section>
+            <h3>Be a part of the team. Full time or volunteer!</h3>
             <button>Learn More</button>
-
         </section>
 
         <section>
-            <h2>Who We Do</h2>
+            <h3>Follow us and connect on social media!</h3>
 
             <ul>
                 <li>
-                    <a href="#"><img src=""></a>
+                    <a href="#"><img src="assets/img/social/facebook.png"></a>
                 </li>
                 <li>
-                    <a href="#"><img src=""></a>
+                    <a href="#"><img src="assets/img/social/instagram.png"></a>
                 </li>
                 <li>
-                    <a href="#"><img src=""></a>
+                    <a href="#"><img src="assets/img/social/square-linkedin-512.png"></a>
                 </li>
             </ul>
 
         </section>
+    </section>
 
-        <section>
-            <h2>Get Involved</h2>
-
-            <section>
-                <h3>Stay up to date with our current news and upcoming events by signing up for our mailing list.</h3>
-
-                <div>
-                    <form method="post" action="#">
-                        <input type="search" name="search">
-                        <input type="submit" value="sign up">
-                    </form>
-                </div>
-            </section>
-
-            <section>
-                <h3>Make a one-time or recurring donation to our program. Any amount helps!</h3>
-                <button>Donate</button>
-            </section>
-
-            <section>
-                <h3>Be a part of the team. Full time or volunteer!</h3>
-                <button>Learn More</button>
-            </section>
-
-            <section>
-                <h3>Follow us and connect on social media!</h3>
-
-                <ul>
-                    <li>
-                        <a href="#"><img src="assets/img/social/facebook.png"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="assets/img/social/instagram.png"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="assets/img/social/square-linkedin-512.png"></a>
-                    </li>
-                </ul>
-
-            </section>
-        </section>
-    </main>
     <!----END MAIN---->
 
     <!----START PAGE FOOTER---->
