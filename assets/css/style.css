@@ -13,55 +13,22 @@ body {
 
 /*----------------Header---------------*/
 
-.row {
-    border: 3px solid red;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+.main-nav {
+
 }
 
 section {
     border: 3px solid purple;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0;
-}
-
-
 .logo img {
     max-width: 150px;
-    margin: 0 auto;
     padding: 20px 20px 20px 20px;
     background-color: red;
 }
 
-.main-nav a:hover {
-    background-color: #007bff;
-    color: #fff;
-} 
-
-
-.nav-soc li {
-    display: inline-block;
-}
-
 .nav-soc img {
     width: 20px;
-}
-
-.utilities-main {}
-
-.join-login {
-    text-align: left;
-}
-
-.search-bar {
-    text-align: right;
 }
 
 .full-background {
@@ -69,15 +36,17 @@ section {
     background-size: cover;
     background-position: center;
     min-height: 100%;
-    position: relative;
     width: 100%;
-    
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 
 
-
-
-
-
-
+.main-content h2 {
+    color: white;
+}
