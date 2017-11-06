@@ -1,5 +1,6 @@
 /*------------Global Styles----------------*/
 
+/*
 html {
     width: 100%;
     height: 100%;
@@ -15,10 +16,71 @@ body {
 ul {
     list-style: none;
 }
+*/
 
 
 /*----------------Header---------------*/
 
+nav.navbar {
+    
+}
+
+nav .container {
+    opacity: 1;
+}
+
+.logo img{
+    max-width: 150px;
+    background-color: red;
+    padding: 1rem;
+}
+
+#main-nav {
+    margin-right: auto;
+}
+
+/*----------------Carousel---------------*/
+
+.carousel img {
+    min-width: 100%;
+}
+
+
+/*----------------Who We Are---------------*/
+
+.content-bg-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-bg-1 section {
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.content-bg-1 section h2{
+    
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.content-bg-1 section h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.content-bg-1 section button {
+    margin-top: 0;
+}
+
+
+
+
+
+/*
 .logo img,
 .logo a {
     max-width: 150px;
@@ -56,7 +118,7 @@ ul {
     min-height: 100%;
     width: 100%;
     position: relative;
-    /*    border: 3px solid red;*/
+        border: 3px solid red;
 }
 
 .content-bg-1 {
@@ -134,3 +196,4 @@ ul {
     text-align: center;
     color: white;
 }
+*/
