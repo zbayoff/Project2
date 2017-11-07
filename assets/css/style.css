@@ -109,10 +109,6 @@ nav.navbar {
     text-align: center;
 }
 
-.hero-content-headers h1 {
-    
-}
-
 @media (max-width: 768px) {
     .hero-content-headers h1 {
         font-size: 2.0rem;
@@ -162,6 +158,37 @@ nav.navbar {
 .content-bg-1 section button {
     margin-top: 0;
 }
+
+/*----------------What We Do---------------*/
+
+.content-bg-2 {
+
+}
+
+.content-bg-2 section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.content-bg-2 section button {
+    margin-top: 0;
+}
+
+.what-we-do-img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*
