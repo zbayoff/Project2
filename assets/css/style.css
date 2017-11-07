@@ -29,7 +29,6 @@ nav.navbar {
 .logo img {
     max-width: 150px;
     padding: 1rem;
-    
 }
 
 @media (max-width: 576px) {
@@ -53,75 +52,87 @@ nav.navbar {
     min-width: 100%;
 }
 
-@media (max-width: 768px) {
-    .carousel img {
-        
-    }
+.carousel-inner {
+    height: 100vh;
 }
-
 
 .carousel-item-1 {
     background-image: url(../img/img1-cropped.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    
+    height: 100%;
 }
 
 .carousel-item-2 {
     background-image: url(../img/img2-cropped.png);
     background-size: cover;
     background-position: left;
-    height: 100vh;
+    height: 100%;
 }
 
 .carousel-item-3 {
-    background-image: url(../img/News-Story-web-banner-cropped.jpg);
+    background-image: url(../img/racket1-cropped.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
 }
 
+
+
 .hero-content {
+    height: 100%;
     position: absolute;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
     bottom: 0;
     left: 0;
     right: 0;
-    
+
+
 }
 
-.hero-content .row {
-    height: 100vh;
+.hero-flex {
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
-.hero-content .hero-content-headers {
-    display: flex;
-    flex-direction: column;
+.hero-content-headers {
+    color: white;
+    text-align: center;
+}
+
+.hero-content-headers h1 {
     
 }
 
-.hero-content .row h1 {
-    text-align: center;
-    color: white;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+@media (max-width: 768px) {
+    .hero-content-headers h1 {
+        font-size: 2.0rem;
+    }
 }
 
-.hero-content .row h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 5rem;
-    font-size: 1.5rem;
+.hero-content-headers h2 {
+    padding-top:8rem;
+    padding-bottom: 8rem;
 }
 
-.hero-content button {
-    
+@media (max-width: 768px) {
+    .hero-content-headers h2 {
+        padding-top:8rem;
+    padding-bottom: 8rem;
+        font-size: 1.5rem;
+    }
 }
+
+
 
 
 /*----------------Who We Are---------------*/
