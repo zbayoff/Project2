@@ -112,7 +112,7 @@ nav.navbar {
 }
 
 .hero-content-headers h1 {
-    background-color: rgba(128, 128, 128, .4);
+    background-color: rgba(128, 128, 128, 0);
 }
 
 @media (max-width: 768px) {
@@ -248,15 +248,12 @@ nav.navbar {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 3px solid green;
 }
 
 .get-involved .service-box-container {
     position: absolute;
-    border: 3px solid red;
     height: calc(100vh - 45vh);
     width: calc(100% - 50%);
-    
 }
 
 @media (max-width: 1550px) {
@@ -269,6 +266,37 @@ nav.navbar {
     .get-involved .service-box-container {
         width: 100%;
     }
+}
+
+@media (max-width: 768px) {
+    .get-involved .container {
+        width: 100%;
+        
+    }
+}
+
+@media (min-width: 576px) {
+    .get-involved  .container {
+        max-width: 100%;
+    }
+}
+
+.service-box-container h4 {
+    font-size: 1.35rem;
+    color: white;
+}
+
+.service-box-container #soc-links {
+    display: flex;
+}
+
+.service-box-container #soc-links li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-box-container #soc-links img {
+    width: 30px;
 }
 
 
