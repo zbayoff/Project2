@@ -31,7 +31,7 @@ nav.navbar {
     padding: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .logo img {
         max-width: 100px;
     }
@@ -233,9 +233,7 @@ nav.navbar {
     height: 100vh;
 }
 
-.get-involved h2 {
-    margin-bottom: 4rem;
-}
+
 
 .tennis-court-img {
     display: flex;
@@ -244,16 +242,29 @@ nav.navbar {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(../img/tennis-court-top-cropped.png);
+/*    background-image: url(../img/tennis-court-top-cropped.png);*/
+    background-color: #A9D86D;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.get-involved .service-box-container {
+.tennis-court-img h2 {
     position: absolute;
-    height: calc(100vh - 45vh);
-    width: calc(100% - 50%);
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.get-involved .service-box-container {
+    background-color: #5799D6;
+    position: absolute;
+    height: calc(100vh - 40vh);
+}
+
+.service-box-container .col-6 {
+    border: 10px solid white;
 }
 
 @media (max-width: 1550px) {
@@ -269,9 +280,8 @@ nav.navbar {
 }
 
 @media (max-width: 768px) {
-    .get-involved .container {
-        width: 100%;
-        
+    .get-involved .service-box-container {
+        height: calc(100vh - 20vh);
     }
 }
 
