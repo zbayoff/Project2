@@ -19,8 +19,9 @@ ul {
 }
 */
 
-a, button {
-    cursor:pointer;
+a,
+button {
+    cursor: pointer;
 }
 
 
@@ -237,8 +238,6 @@ nav.navbar {
     height: 100vh;
 }
 
-
-
 .tennis-court-img {
     display: flex;
     justify-content: center;
@@ -246,7 +245,7 @@ nav.navbar {
     align-items: center;
     width: 100%;
     height: 100%;
-/*    background-image: url(../img/tennis-court-top-cropped.png);*/
+    /*    background-image: url(../img/tennis-court-top-cropped.png);*/
     background-color: #A9D86D;
     background-size: cover;
     background-repeat: no-repeat;
@@ -271,9 +270,9 @@ nav.navbar {
     border: 10px solid white;
 }
 
-@media (max-width: 1550px) {
+@media (min-width: 856px) {
     .get-involved .service-box-container {
-        width: 800px;
+        width: 900px;
     }
 }
 
@@ -290,7 +289,7 @@ nav.navbar {
 }
 
 @media (min-width: 576px) {
-    .get-involved  .service-box-container {
+    .get-involved .service-box-container {
         max-width: 100%;
     }
 }
@@ -312,6 +311,98 @@ nav.navbar {
 .service-box-container #soc-links img {
     width: 30px;
 }
+
+
+/*-------------------Donations---------------------*/
+
+#donations-header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #donations-header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+#donations-header .logo {
+    
+    display: inline-block;
+}
+
+#donations-header .title {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    width: calc(100% - 300px);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #donations-header .title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+main {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.form-container {
+    padding-top: 3rem;
+}
+
+.form-container h2 {
+    border: 3px solid black;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1200px) {
+    .form-container h2 {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .form-container h2 {
+        max-width: 66.66%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container h2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*
+fieldset {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+*/
 
 
 /*
