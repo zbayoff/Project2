@@ -19,6 +19,10 @@ ul {
 }
 */
 
+a, button {
+    cursor:pointer;
+}
+
 
 /*----------------Header---------------*/
 
@@ -281,12 +285,12 @@ nav.navbar {
 
 @media (max-width: 768px) {
     .get-involved .service-box-container {
-        height: calc(100vh - 20vh);
+        height: calc(100vh - 30vh);
     }
 }
 
 @media (min-width: 576px) {
-    .get-involved  .container {
+    .get-involved  .service-box-container {
         max-width: 100%;
     }
 }
