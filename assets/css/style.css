@@ -333,7 +333,6 @@ nav.navbar {
 }
 
 #donations-header .logo {
-    
     display: inline-block;
 }
 
@@ -350,7 +349,6 @@ nav.navbar {
         margin: 0;
         width: 100%;
         text-align: center;
-        
     }
 }
 
@@ -394,6 +392,14 @@ main {
     .form-container h2 {
         font-size: 1.5rem;
     }
+}
+
+.breadcrumb {
+    background-color: white;
+}
+
+.breadcrumb-item {
+    font-size: .8rem;
 }
 
 
@@ -522,3 +528,15 @@ fieldset {
     color: white;
 }
 */
+
+.button-amounts button:focus {
+    background-color: #A9D86D;
+}
+
+
+
+
+
+
+
+

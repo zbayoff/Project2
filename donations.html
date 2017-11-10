@@ -28,36 +28,41 @@
     <!----START MAIN---->
     <main role="main">
         <div class="container form-container">
+            
             <div class="row justify-content-center">
+                
                 <div class="col-12 col-lg-6 col-md-8">
-
+                    <div>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Select Amount</li>
+                            <li class="breadcrumb-item">Mailing Address</li>
+                            <li class="breadcrumb-item">Billing Address</li>
+                            <li class="breadcrumb-item">Payment Info</li>
+                        </ol>
+                    </div>
+                    
                     <!--------------Start of Carousel---------->
-
                     <div class="carousel slide" data-interval="0" id="form-carousel" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#form-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#form-carousel" data-slide-to="1"></li>
                             <li data-target="#form-carousel" data-slide-to="2"></li>
                             <li data-target="#form-carousel" data-slide-to="3"></li>
-                        </ol>
-                        <!----Carousel Bottom Indicators----->
-
-                        <div class="carousel-inner p-3">
-
+                        </ol><!----Carousel Bottom Indicators----->
+                        <div class="carousel-inner">
                             <form method="post" action="#">
                                 <div class="carousel-item active">
-
                                     <fieldset class="form-group">
                                         <h3 class="mb-3">1. Select Amount</h3>
-                                        <div class="form-group d-flex flex-wrap justify-content-center">
-                                            <button class="btn btn-primary m-2">$10</button>
-                                            <button class="btn btn-primary m-2">$25</button>
-                                            <button class="btn btn-primary m-2">$50</button>
-                                            <button class="btn btn-primary m-2">$100</button>
-                                            <button class="btn btn-primary m-2">$250</button>
-                                            <button class="btn btn-primary m-2">$500</button>
-                                            <button class="btn btn-primary m-2">$1000</button>
-                                            <button class="btn btn-primary m-2">$5000</button>
+                                        <div class="form-group d-flex flex-wrap justify-content-center button-amounts">
+                                            <button type="button" class="btn btn-primary m-2">$10</button>
+                                            <button type="button" class="btn btn-primary m-2">$25</button>
+                                            <button type="button" class="btn btn-primary m-2">$50</button>
+                                            <button type="button" class="btn btn-primary m-2">$100</button>
+                                            <button type="button" class="btn btn-primary m-2">$250</button>
+                                            <button type="button" class="btn btn-primary m-2">$500</button>
+                                            <button type="button" class="btn btn-primary m-2">$1000</button>
+                                            <button type="button" class="btn btn-primary m-2">$5000</button>
                                         </div>
                                         <!------form-group------->
                                         <div class="form-group">
@@ -70,9 +75,9 @@
                                         <div class="form-group">
                                             <label for="select-frequency">Select Frequency:</label>
                                             <div class="form-group d-flex flex-wrap justify-content-center">
-                                                <button class="btn btn-primary m-2">One-Time</button>
-                                                <button class="btn btn-primary m-2">Monthly</button>
-                                                <button class="btn btn-primary m-2">Annually</button>
+                                                <button type="button" class="btn btn-primary m-2">One-Time</button>
+                                                <button type="button" class="btn btn-primary m-2">Monthly</button>
+                                                <button type="button" class="btn btn-primary m-2">Annually</button>
                                             </div>
                                         </div>
                                         <!------form-group------->
@@ -192,7 +197,7 @@
                                             <!------col------->
                                             <div class="col-sm-4 col-12 mb-3">
                                                 <label class="sr-only" for="zip">Zip Code</label>
-                                                <input class="form-control" type="number" id="zip-code" placeholder="Zip Code" required aria-required="true">
+                                                <input class="form-control" type="" id="zip-code" placeholder="Zip Code" required aria-required="true">
                                             </div>
                                             <!------col------->
 
@@ -961,7 +966,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    <script src="assets/js/scripts.js"></script>
 
 
 
