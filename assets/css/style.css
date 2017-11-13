@@ -352,6 +352,10 @@ nav.navbar {
     }
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
 main {
     height: 100vh;
     background-color: antiquewhite;
