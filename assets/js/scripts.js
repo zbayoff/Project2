@@ -32,41 +32,112 @@
 
 var btnAmounts = document.querySelectorAll(".button-amounts > button");
 
-assignDonationAmount = 0;
+clickedPosition = 0;
+DonationAmount = 0;
 
+var clickedArray = [false, false, false, false, false, false, false, false];
 
 for (i = 0; i < btnAmounts.length; ++i) {
-    btnAmounts[i].onclick = function () {
-        this.style.backgroundColor = "red";
-        assignDonationAmount = document.activeElement.textContent.slice(1);
-        console.log(assignDonationAmount);
-    };
+    (function (index) {
+        btnAmounts[i].onclick = function () {
+            clickedArray = [false, false, false, false, false, false, false, false];
+            clickedArray[index] = true;
+            for (z=0; z<btnAmounts.length; z++){
+                if(clickedArray[z] == true){
+                    btnAmounts[z].style.backgroundColor = "red";
+                    clickedPosition = z;
+                    DonationAmount = btnAmounts[z].textContent.slice(1);
+                }
+                else{
+                    btnAmounts[z].style.backgroundColor = "#007bff";
+                }
+            }
+        };
+    })(i);
 };
+
+
+
+
+
+
+
+
+
+//     btnAmounts[i].onclick = function () {
+//            alert("button was clicked");
+//            
+//            clickHandler();
+//        };
+//        
+//        if (elementIsClicked == true){
+//            btnAmounts[i].style.backgroundColor = "red";
+//        }
+//        
+//            };
+//    
+
+
+
+
+
+//        btnAmounts[i].addEventListener('click', clickHandler);
+//        console.log(clickedElements);
+
+//        if (elementIsClicked == true) {
+//            this.style.backgroundColor = "red";
+//            
+//        }
+//if button has not been clicked, enter loop to add onclick event below.
+//else (a button has been clicked) set all other elements to default background color.
+//        if (function checking clicked is true) {
+//
+//            this.style.backgroundColor = "#007bff"; //primary color
+//
+//        }
+
+//            <div id="myElement">Click me!</div>
+//JS:
+//
+
+//
+//var element = document.getElementById('myElement'); // grab a reference to your element
+//element.addEventListener('click', clickHandler); // associate the function above with the click event
+
+//        btnAmounts[i].onclick = function () {
+//            this.style.backgroundColor = "red";
+//            assignDonationAmount = document.activeElement.textContent.slice(1);
+//            console.log(assignDonationAmount);
+//
+//        };
+
+
+
+
+
+
+
 
 //Loops through array of donation frequency and adds an onclick event to each.
 
 //Assigns a variable to the chosen frequency amount.
 
-var btnFreq = document.querySelectorAll(".button-frequency > button");
-
-assignFreqAmount = "";
-
-
-for (i = 0; i < btnFreq.length; ++i) {
-    btnFreq[i].onclick = function () {
-        this.style.backgroundColor = "red";
-        assignFreqAmount = document.activeElement.textContent;
-        console.log(assignFreqAmount);
-    };
-};
-
-
-
-
-
-
-
-
+//var btnFreq = document.querySelectorAll(".button-frequency > button");
+//
+//assignFreqAmount = "";
+//
+//
+//for (i = 0; i < btnFreq.length; ++i) {
+//    btnFreq[i].onclick = function () {
+//        this.style.backgroundColor = "red";
+//        assignFreqAmount = document.activeElement.textContent;
+//        console.log(assignFreqAmount);
+//    };
+//};
+//
+//
+//
+//
 
 
 
@@ -92,4 +163,3 @@ for (i = 0; i < btnFreq.length; ++i) {
 //
 //mainHeight = main.style.height = 'calc(100vh - ' + headerHeight +'px)';
 //console.log(mainHeight);
-

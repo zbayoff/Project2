@@ -411,6 +411,22 @@ main {
     font-size: .8rem;
 }
 
+/*
+.button-amounts button:focus {
+    background-color: #A9D86D;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 fieldset {
@@ -538,9 +554,7 @@ fieldset {
 }
 */
 
-.button-amounts button:focus {
-    background-color: #A9D86D;
-}
+
 
 
 
