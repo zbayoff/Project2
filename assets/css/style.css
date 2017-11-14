@@ -352,6 +352,11 @@ nav.navbar {
     }
 }
 
+.breadcrumb .breadcrumb-item {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
 }

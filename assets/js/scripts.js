@@ -1,6 +1,6 @@
 // Send "Email" when user signs up for newsletter. 
 
-//window.onload = function () {
+
 //    document.querySelector("#news-email-btn").onclick = function (e) {
 //
 //        e.preventDefault();
@@ -13,7 +13,7 @@
 //            alert("Please enter a valid email. Something like: zack@bayoff.com");
 //        };
 //    };
-//};
+
 
 // Run a loop to add a style property when a button is clicked; to each button element with the class .button-amounts
 
@@ -27,31 +27,46 @@
 
 
 //Loops through array of donation amounts and adds an onclick event to each.
+
 //Assigns a variable to the chosen dollar amount using the text (string and splice) within the <button> tag. 
 
-//var assignDonationAmount = function (arg) {
-//
-//    chosenDonation = arg;
-//    console.log(chosenDonation);
-//};
-//
-//for (i = 0; i < btnAmounts.length; ++i) {
-//
-//    var chosenDonation = 0;
-//
-//    btnAmounts[i].onclick = function () {
-//
-//        //console.log(this);
-//
-//        // Why do I need to create another variable here? Why can't I write:
-//        // btnAmounts[i].style.backgroundColor = "red";
-//        //        var btnAmountbg = this;
-//        //        btnAmountbg.style.backgroundColor = "red";
-//        //console.log("You've chosen " + document.activeElement.textContent.slice(1));
-//
-//        assignDonationAmount(document.activeElement.textContent.slice(1));
-//    };
-//};
+var btnAmounts = document.querySelectorAll(".button-amounts > button");
+
+assignDonationAmount = 0;
+
+
+for (i = 0; i < btnAmounts.length; ++i) {
+    btnAmounts[i].onclick = function () {
+        this.style.backgroundColor = "red";
+        assignDonationAmount = document.activeElement.textContent.slice(1);
+        console.log(assignDonationAmount);
+    };
+};
+
+//Loops through array of donation frequency and adds an onclick event to each.
+
+//Assigns a variable to the chosen frequency amount.
+
+var btnFreq = document.querySelectorAll(".button-frequency > button");
+
+assignFreqAmount = "";
+
+
+for (i = 0; i < btnFreq.length; ++i) {
+    btnFreq[i].onclick = function () {
+        this.style.backgroundColor = "red";
+        assignFreqAmount = document.activeElement.textContent;
+        console.log(assignFreqAmount);
+    };
+};
+
+
+
+
+
+
+
+
 
 
 
@@ -69,36 +84,12 @@
 
 
 
-var headerHeight = document.querySelector(".masthead").clientHeight;
-
-console.log(headerHeight);
-
-var mainHeight = document.querySelector("main");
-
-mainHeight.style.height = '"calc(100vh - " + headerHeight)';
-console.log(mainHeight);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//var headerHeight = document.querySelector(".masthead").clientHeight;
+//
+//console.log(headerHeight);
+//
+//var main = document.querySelector("main");
+//
+//mainHeight = main.style.height = 'calc(100vh - ' + headerHeight +'px)';
+//console.log(mainHeight);
 
