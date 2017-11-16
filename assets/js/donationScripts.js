@@ -216,14 +216,14 @@ var radioCheckAddress = document.querySelector("#radio-check-address");
 
 
 
-    //var headerHeight = document.querySelector(".masthead").clientHeight;
-    //
-    //console.log(headerHeight);
-    //
-    //var main = document.querySelector("main");
-    //
-    //mainHeight = main.style.height = 'calc(100vh - ' + headerHeight +'px)';
-    //console.log(mainHeight);
+//    var headerHeight = document.querySelector(".masthead").clientHeight;
+//    
+//    console.log(headerHeight);
+//    
+//    var main = document.querySelector("main");
+//    
+//    mainHeight = main.style.height = 'calc(100vh - ' + headerHeight +'px)';
+//    console.log(mainHeight);
 
     // ----------------Payment Info--------------------------
 
@@ -232,21 +232,20 @@ var radioCheckAddress = document.querySelector("#radio-check-address");
 
     donateBtn.onclick = function () {
         
-        alert(
-        "Thank you for donating! The information you provided is summarized below: \n Amount Donated: " + "$" + DonationAmount + ".00"
+        var modalBody = document.querySelector("#modal-body");
+        console.log(modalBody);
+        //modalBody.innerHTML
         
         
         
-        )
-        
-        
-        
-        
-        
-        
-        
-        
-        
+//        alert(
+//        "Thank you for donating! The information you provided is summarized below: \n\nAmount Donated: " + "$" + 
+//        DonationAmount + ".00" + "\nYour Name: " + mailingFirstName.value + " "
+//        
+//        
+//        
+//        )
+    
         
     }
 
