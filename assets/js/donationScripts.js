@@ -159,57 +159,57 @@ var radioCheckAddress = document.querySelector("#radio-check-address");
 
 
 
-        radioCheckAddress.onclick = function() {
-            if (radioCheckAddress.checked == true){
-                billingFirstName.value = mailingFirstName.value;                
-                billingFirstName.disabled = true;
-                billingLastName.value = mailingLastName.value;                
-                billingLastName.disabled = true;
-                billingEmail.value = mailingEmail.value;                
-                billingEmail.disabled = true;
-                billingAddress.value = mailingAddress.value;                
-                billingAddress.disabled = true;
-                billingAddress2.value = mailingAddress2.value;                
-                billingAddress2.disabled = true;
-                billingCity.value = mailingCity.value;                
-                billingCity.disabled = true;
-                billingState.value = mailingState.value;                
-                billingState.disabled = true;
-                billingZip.value = mailingZip.value;                
-                billingZip.disabled = true;
-                billingCountry.value = mailingCountry.value;                
-                billingCountry.disabled = true;
-            }
-            if (radioCheckAddress.checked == false){
-                billingFirstName.value = "";                
-                billingFirstName.disabled = false;
-                billingLastName.value = "";                
-                billingLastName.disabled = false;
-                billingEmail.value = "";                
-                billingEmail.disabled = false;
-                billingAddress.value = "";                
-                billingAddress.disabled = false;
-                billingAddress2.value = "";                
-                billingAddress2.disabled = false;
-                billingCity.value = "";                
-                billingCity.disabled = false;
-                billingState.value = "State";                
-                billingState.disabled = false;
-                billingZip.value = "";                
-                billingZip.disabled = false;
-                billingCountry.value = "Country";                
-                billingCountry.disabled = false;
-            }
-        }
-            
+radioCheckAddress.onclick = function () {
+    if (radioCheckAddress.checked == true) {
+        billingFirstName.value = mailingFirstName.value;
+        billingFirstName.disabled = true;
+        billingLastName.value = mailingLastName.value;
+        billingLastName.disabled = true;
+        billingEmail.value = mailingEmail.value;
+        billingEmail.disabled = true;
+        billingAddress.value = mailingAddress.value;
+        billingAddress.disabled = true;
+        billingAddress2.value = mailingAddress2.value;
+        billingAddress2.disabled = true;
+        billingCity.value = mailingCity.value;
+        billingCity.disabled = true;
+        billingState.value = mailingState.value;
+        billingState.disabled = true;
+        billingZip.value = mailingZip.value;
+        billingZip.disabled = true;
+        billingCountry.value = mailingCountry.value;
+        billingCountry.disabled = true;
+    }
+    if (radioCheckAddress.checked == false) {
+        billingFirstName.value = "";
+        billingFirstName.disabled = false;
+        billingLastName.value = "";
+        billingLastName.disabled = false;
+        billingEmail.value = "";
+        billingEmail.disabled = false;
+        billingAddress.value = "";
+        billingAddress.disabled = false;
+        billingAddress2.value = "";
+        billingAddress2.disabled = false;
+        billingCity.value = "";
+        billingCity.disabled = false;
+        billingState.value = "State";
+        billingState.disabled = false;
+        billingZip.value = "";
+        billingZip.disabled = false;
+        billingCountry.value = "Country";
+        billingCountry.disabled = false;
+    }
+}
 
 
 
 
-    // mailingFirstName.onkeyup = function () {
-    //            var mailingFirstNameTyped = mailingFirstName.value;
-    //            console.log(mailingFirstNameTyped);
-    //        }
+
+// mailingFirstName.onkeyup = function () {
+//            var mailingFirstNameTyped = mailingFirstName.value;
+//            console.log(mailingFirstNameTyped);
+//        }
 
 
 
@@ -225,40 +225,24 @@ var radioCheckAddress = document.querySelector("#radio-check-address");
 //    mainHeight = main.style.height = 'calc(100vh - ' + headerHeight +'px)';
 //    console.log(mainHeight);
 
-    // ----------------Payment Info--------------------------
+// ----------------Payment Info--------------------------
 
 
-    var donateBtn = document.querySelector("#btn-donate");
+var donateBtn = document.querySelector("#btn-donate");
 
-    donateBtn.onclick = function () {
-        
-        var modalBody = document.querySelector("#modal-body");
-        console.log(modalBody);
-        //modalBody.innerHTML
-        
-        
-        
-//        alert(
-//        "Thank you for donating! The information you provided is summarized below: \n\nAmount Donated: " + "$" + 
-//        DonationAmount + ".00" + "\nYour Name: " + mailingFirstName.value + " "
-//        
-//        
-//        
-//        )
+donateBtn.onclick = function () {
+
+    var modalBody = document.querySelector("#donation-modal-body .second");
+
+
+    var name = modalBody.appendChild(document.createElement("p"));
+    name.innerHTML = mailingFirstName.value + " " + mailingLastName.value;
+    var email = modalBody.appendChild(document.createElement("p"));
+    email.innerHTML =mailingEmail.value;
+    var address = modalBody.appendChild(document.createElement("p"));
+    address.innerHTML = mailingAddress.value + " " + "<br>" +  mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value;
     
-        
-    }
+
+}
 
 
-
-    //text = [];
-    //
-    //donateBtn.onclick = function() {
-    //    var donationForm = document.querySelector("#donation-form");
-    //    
-    //
-    //    for (i=0; i<donationForm.length; i++) {
-    //        text = text.concat(donationForm.elements[i].value);
-    //    }
-    //    alert(text);
-    //}
