@@ -862,26 +862,26 @@
 
                                         <div class="form-group row">
                                             <div class="col-12">
-                                                <label class="sr-only" for="country">Country</label>
-                                                <input class="form-control" type="text" placeholder="Name on Card">
+                                                <label class="sr-only" for="credit-name">Credit Card Name</label>
+                                                <input id="credit-name" class="form-control" type="text" placeholder="Name on Card">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <div class="col-8">
                                                 <label class="sr-only" for="credit">credit</label>
-                                                <input class="form-control" type="number" placeholder="Credit Card Number">
+                                                <input id="credit-number" class="form-control" type="number" placeholder="Credit Card Number">
                                             </div>
                                             <div class="col-4">
                                                 <label class="sr-only" for="cvv">CVV Security Code</label>
-                                                <input class="form-control" type="number" placeholder="CVV">
+                                                <input id="credit-cvv" class="form-control" type="number" placeholder="CVV">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <div class="col-sm-4 col-7">
                                                 <label class="sr-only" for="exp">Expiration Date</label>
-                                                <input class="form-control" type="text" placeholder="MM/YY">
+                                                <input id="credit-exp" class="form-control" type="text" placeholder="MM/YY">
                                             </div>
                                         </div>
 
@@ -918,12 +918,20 @@
                                     <!----modal header----->
                                     <div class="modal-body" id="donation-modal-body">
                                         <div class="row">
-                                            <div class="col-3">
-                                                <p>Name:</p>
-                                                <p>Email:</p>
-                                                <p>Address:</p>
+                                            <div class="col-12 col-md-6">
+                                                <h4 id="personal-info-header">Personal Info</h4>
+                                                <p id="personal-name">Name: </p>
+                                                <p id="personal-email">Email: </p>
+                                                <p id="personal-address">Address: </p>
                                             </div>
-                                            <div class=" second col-9">
+                                            <div class="col-12 col-md-6">
+                                                <h4 id="payment-info-header">Payment Info</h4>
+                                                <p id="donation-amt">Donation Amount: </p>
+                                                <p id="donation-freq">Donation Frequency: </p>
+                                                <p id="credit-card-name">Name on Card: </p>
+                                                <p id="credit-card-no">Credit Card No.: </p>
+                                                <p id="exp-date">Exp. Date: </p>
+                                                <p id="cvv">CVV: </p>
                                             </div>
                                         </div>
                                     </div>

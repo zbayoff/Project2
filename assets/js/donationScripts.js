@@ -87,7 +87,7 @@ var btnFreq = document.querySelectorAll(".button-frequency > button");
 //
 
 var freqArray = [];
-assignFreqAmount = 0;
+FreqAmount = 0;
 
 for (j = 0; j < btnFreq.length; j++) {
     freqArray[j] = false;
@@ -106,7 +106,7 @@ for (i = 0; i < btnFreq.length; ++i) {
                 if (freqArray[z] == true) {
                     btnFreq[z].style.backgroundColor = "red";
                     clickedPosition = z;
-                    assignFreqAmount = btnFreq[z].textContent;
+                    FreqAmount = btnFreq[z].textContent;
                 } else {
                     btnFreq[z].style.backgroundColor = "#007bff";
                 }
@@ -135,6 +135,8 @@ var mailingCountry = document.querySelector("#mail-country");
 
 
 
+
+
 // ----------------Billing Address--------------------------
 
 
@@ -151,6 +153,17 @@ var billingCity = document.querySelector("#bill-city");
 var billingState = document.querySelector("#bill-state");
 var billingZip = document.querySelector("#bill-zip-code");
 var billingCountry = document.querySelector("#bill-country");
+
+
+// ----------------Payment Info--------------------------
+
+var creditCardName = document.querySelector("#credit-name");
+var creditCardNumber = document.querySelector("#credit-number");
+var creditCVV = document.querySelector("#credit-cvv");
+var creditExp = document.querySelector("#credit-exp");
+
+
+// Store all values from input and select fields into variables
 
 var radioCheckAddress = document.querySelector("#radio-check-address");
 
@@ -232,15 +245,53 @@ var donateBtn = document.querySelector("#btn-donate");
 
 donateBtn.onclick = function () {
 
-    var modalBody = document.querySelector("#donation-modal-body .second");
-
-
-    var name = modalBody.appendChild(document.createElement("p"));
-    name.innerHTML = mailingFirstName.value + " " + mailingLastName.value;
-    var email = modalBody.appendChild(document.createElement("p"));
-    email.innerHTML =mailingEmail.value;
-    var address = modalBody.appendChild(document.createElement("p"));
-    address.innerHTML = mailingAddress.value + " " + "<br>" +  mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value;
+    var modalBody = document.querySelector("#donation-modal-body");
+    
+//    var headerPersonalInfo = modalBody.appendChild();
+//    headerPersonalInfo.innerHTML = "";
+    
+    var personalInfoName = document.querySelector("#personal-name").appendChild(document.createElement("p"));
+    personalInfoName.innerHTML = mailingFirstName.value + " " + mailingLastName.value + "<br>";
+    personalInfoName.style.fontWeight = 600;
+    
+    var personalInfoEmail = document.querySelector("#personal-email").appendChild(document.createElement("p"));
+    personalInfoEmail.innerHTML = mailingEmail.value;
+    personalInfoEmail.style.fontWeight = 600;
+    
+    var personalInfoAddress = document.querySelector("#personal-address").appendChild(document.createElement("p"));
+    personalInfoAddress.innerHTML = mailingAddress.value + " " + "<br>" +  mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value;
+    personalInfoAddress.style.fontWeight = 600;
+    
+    var donationAmt = document.querySelector("#donation-amt").appendChild(document.createElement("p"));
+    donationAmt.innerHTML = "$" + DonationAmount + ".00";
+    donationAmt.style.fontWeight = 600;
+    
+    var donationFreq = document.querySelector("#donation-freq").appendChild(document.createElement("p"));
+    donationFreq.innerHTML = FreqAmount;
+    donationFreq.style.fontWeight = 600;
+    
+    var ccName = document.querySelector("#credit-card-name").appendChild(document.createElement("p"));
+    ccName.innerHTML = creditCardName.value;
+    ccName.style.fontWeight = 600;
+    
+    var ccNo = document.querySelector("#credit-card-no").appendChild(document.createElement("p"));
+    ccNo.innerHTML = creditCardNumber.value;
+    ccNo.style.fontWeight = 600;
+    
+    var ccExp = document.querySelector("#exp-date").appendChild(document.createElement("p"));
+    ccExp.innerHTML = creditExp.value;
+    ccExp.style.fontWeight = 600;
+    
+    var ccCVV = document.querySelector("#cvv").appendChild(document.createElement("p"));
+    ccCVV.innerHTML = creditCVV.value;
+    ccCVV.style.fontWeight = 600;
+    
+    
+    
+//    var email = "Email: " + "<br>" + modalBody.appendChild(document.createElement("p"));
+//    email.innerHTML =mailingEmail.value + "<br>";
+//    var mailaddress = modalBody.appendChild(document.createElement("p"));
+//    mailaddress.innerHTML = "Mailing Address: " + "<br>" + mailingAddress.value + " " + "<br>" +  mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value + "<br>";
     
 
 }
