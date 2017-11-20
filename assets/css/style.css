@@ -357,8 +357,8 @@ nav.navbar {
     text-decoration: underline;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-  content: ">";
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
 }
 
 main {
@@ -371,7 +371,6 @@ main {
 }
 
 .form-container h2 {
-    
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -400,7 +399,6 @@ main {
 @media (max-width: 568px) {
     .form-container h2 {
         font-size: 1.5rem;
-        
     }
 }
 
@@ -409,13 +407,26 @@ main {
 }
 
 .breadcrumb-item {
+    
     font-size: .8rem;
 }
 
 
 /*-------- Donation Modal--------*/
 
-#donation-modal-body h2{
+@media (max-width: 768px) {
+    #payment-info-header {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        min-width: 700px;
+    }
+}
+
+#donation-modal-body h2 {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -424,21 +435,11 @@ main {
     font-weight: 700;
 }
 
-#donation-modal-body p {
-    
-}
+#donation-modal-body p {}
 
 #payment-info-header {
     font-weight: 700;
 }
-
-
-
-
-
-
-
-
 
 
 /*
@@ -446,16 +447,6 @@ main {
     background-color: #A9D86D;
 }
 */
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -583,13 +574,3 @@ fieldset {
     color: white;
 }
 */
-
-
-
-
-
-
-
-
-
-
