@@ -2,60 +2,53 @@
 
 // When carousel item is active, display the breadcrumb and hide those ahead of it, but keep the previous ones. 
 
-
 var carouselItems = document.querySelectorAll('.carousel-item');
 var breadcrumbItems = document.querySelectorAll('.breadcrumb-item');
 
-//Set the display of the first breadcrumb to "flex".
+//Set the display of the all breadcrumbs, except the first, to "disabled".
 (function () {
-
-    for(j=0; j<breadcrumbItems.length; j++) {
+    for (var j = 0; j < breadcrumbItems.length; j++) {
         breadcrumbItems[j].setAttribute(
-   "style", "opacity: .65; pointer-events: none; ");
+            "style", "opacity: .65; pointer-events: none; ");
     }
-    
-    console.log(breadcrumbItems);
-    
-   for (i=0; i<carouselItems.length; i++){
-       if (carouselItems[i].classList.contains("active")) {
-           breadcrumbItems[i].setAttribute(
-            "style", "opacity: 1.0; pointer-events: auto; ");
-       };
-   }; 
+    breadcrumbItems[0].setAttribute(
+        "style", "opacity: 1.0; pointer-events: auto; ");
 })();
 
+function displayBreadcrumbs(a) {
 
-
-console.log(carouselItems);
-
-function displayBreadcrumbs() {
-    
-    //console.log("slider button was clicked");
-
-    for (x=0; x<carouselItems.length; x++) {
-        //if carousel item has a class of active, display all breadcrumbs up to and including that carousel item. 
-        
-        if(carouselItems[x].classList.contains("active")){
-            
-            console.log("Carousel item " + carouselItems[x] + "is the active item");
-            
-            // loop through all breadcrumbs up to that of the active carousel element and set display to show.
-        }
+    for (var j = 0; j < breadcrumbItems.length; j++) {
+        breadcrumbItems[j].setAttribute(
+            "style", "opacity: .65; pointer-events: none; ");
+    }
+    breadcrumbItems[0].setAttribute(
+        "style", "opacity: 1.0; pointer-events: auto; ");
+    y = 0;
+    for (x = 0; x < carouselItems.length; x++) {
+        //if carousel item has a class of active, loop through and display all breadcrumbs up to and including that carousel item.
+        //loop through all elements after the active element and set to display "none"
+        if (carouselItems[x].classList.contains("active") == true) {
+            if (a == "Next") {
+                y = x + 1;
+            } else {
+                y = x - 1;
+            };
+        };
+        for (r = 0; r <= y; r++) {
+            breadcrumbItems[r].setAttribute(
+                "style", "opacity: 1.0; pointer-events: auto;");
+        };
     };
 };
-
 var slideButtons = document.querySelectorAll('.slideBtn');
-
-for (a = 0; a<slideButtons.length; a++) {
+for (f = 0; f < slideButtons.length; f++) {
     (function (index) {
         slideButtons[index].addEventListener("click", function () {
-            displayBreadcrumbs();
+            a = this.innerHTML;
+            displayBreadcrumbs(a);
         });
-    })(a);
+    })(f);
 };
-
-
-
 
 // ----------------Select Amount--------------------------
 
@@ -75,13 +68,10 @@ for (j = 0; j < btnAmounts.length; j++) {
 }
 
 //Loops through array of donation amounts and adds an onclick event to each.
-
 //Assigns a variable to the chosen dollar amount using the text (string and splice) within the <button> tag. 
 
 var otherAmountInput = document.querySelector("#other-amount");
-
 var inputSelected = false;
-
 otherAmountInput.addEventListener("mouseup", onMouseUp, false);
 
 function onMouseUp() {
@@ -104,7 +94,6 @@ function checkInputs() {
         otherAmountInput.onkeyup = function () {
             DonationAmount = otherAmountInput.value;
         }
-
     } else {
         for (i = 0; i < btnAmounts.length; ++i) {
             (function (index) {
@@ -114,7 +103,6 @@ function checkInputs() {
                     for (a = 0; a < btnAmounts.length; a++) {
                         clickedArray[a] = false;
                     }
-
                     clickedArray[index] = true;
                     for (z = 0; z < btnAmounts.length; z++) {
                         if (clickedArray[z] == true) {
@@ -126,14 +114,12 @@ function checkInputs() {
                         }
                     }
                 };
-            })(i); // use different variable for scoping? 
+            })(i); 
         };
     };
-
 };
 
 checkInputs();
-
 
 //Loops through array of donation frequency and adds an onclick event to each.
 //Assigns a variable to the chosen frequency amount.
@@ -153,11 +139,9 @@ for (j = 0; j < btnFreq.length; j++) {
 for (i = 0; i < btnFreq.length; ++i) {
     (function (index) {
         btnFreq[i].onclick = function () {
-
             for (a = 0; a < btnFreq.length; a++) {
                 freqArray[a] = false;
             }
-
             freqArray[index] = true;
             for (z = 0; z < btnFreq.length; z++) {
                 if (freqArray[z] == true) {
@@ -172,13 +156,13 @@ for (i = 0; i < btnFreq.length; ++i) {
     })(i); // use different variable for scoping? 
 };
 
+// Check values of inputs. If not filled, display alert saying values must be filled out.
+
+
 
 // ----------------Mailing Address--------------------------
 
-
 // Store all values from input and select fields into variables
-
-
 
 var mailingFirstName = document.querySelector("#mail-first-name");
 var mailingLastName = document.querySelector("#mail-last-name");
@@ -190,16 +174,9 @@ var mailingState = document.querySelector("#mail-state");
 var mailingZip = document.querySelector("#mail-zip-code");
 var mailingCountry = document.querySelector("#mail-country");
 
-
-
-
-
 // ----------------Billing Address--------------------------
 
-
 // Store all values from input and select fields into variables
-
-
 
 var billingFirstName = document.querySelector("#bill-first-name");
 var billingLastName = document.querySelector("#bill-last-name");
@@ -211,7 +188,6 @@ var billingState = document.querySelector("#bill-state");
 var billingZip = document.querySelector("#bill-zip-code");
 var billingCountry = document.querySelector("#bill-country");
 
-
 // ----------------Payment Info--------------------------
 
 var creditCardName = document.querySelector("#credit-name");
@@ -219,15 +195,11 @@ var creditCardNumber = document.querySelector("#credit-number");
 var creditCVV = document.querySelector("#credit-cvv");
 var creditExp = document.querySelector("#credit-exp");
 
-
 // Store all values from input and select fields into variables
 
 var radioCheckAddress = document.querySelector("#radio-check-address");
 
-
 // set onlick for checkbox to then fill all required inputs and disable them. 
-
-
 
 radioCheckAddress.onclick = function () {
     if (radioCheckAddress.checked == true) {
@@ -272,20 +244,6 @@ radioCheckAddress.onclick = function () {
     }
 }
 
-
-
-
-
-// mailingFirstName.onkeyup = function () {
-//            var mailingFirstNameTyped = mailingFirstName.value;
-//            console.log(mailingFirstNameTyped);
-//        }
-
-
-
-
-
-
 //    var headerHeight = document.querySelector(".masthead").clientHeight;
 //    
 //    console.log(headerHeight);
@@ -297,58 +255,54 @@ radioCheckAddress.onclick = function () {
 
 // ----------------Payment Info--------------------------
 
-
 var donateBtn = document.querySelector("#btn-donate");
 
 donateBtn.onclick = function () {
 
     var modalBody = document.querySelector("#donation-modal-body");
 
-    //    var headerPersonalInfo = modalBody.appendChild();
-    //    headerPersonalInfo.innerHTML = "";
-
     var personalInfoName = document.querySelector("#personal-name").appendChild(document.createElement("p"));
     personalInfoName.innerHTML = mailingFirstName.value + " " + mailingLastName.value + "<br>";
     personalInfoName.style.fontWeight = 600;
+    personalInfoName.style.backgroundColor = "#D3D3D3";
 
     var personalInfoEmail = document.querySelector("#personal-email").appendChild(document.createElement("p"));
     personalInfoEmail.innerHTML = mailingEmail.value;
     personalInfoEmail.style.fontWeight = 600;
+    personalInfoEmail.style.backgroundColor = "#D3D3D3";
 
     var personalInfoAddress = document.querySelector("#personal-address").appendChild(document.createElement("p"));
     personalInfoAddress.innerHTML = mailingAddress.value + " " + "<br>" + mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value;
     personalInfoAddress.style.fontWeight = 600;
+    personalInfoAddress.style.backgroundColor = "#D3D3D3";
 
     var donationAmt = document.querySelector("#donation-amt").appendChild(document.createElement("p"));
     donationAmt.innerHTML = "$" + DonationAmount + ".00";
     donationAmt.style.fontWeight = 600;
+    donationAmt.style.backgroundColor = "#D3D3D3";
 
     var donationFreq = document.querySelector("#donation-freq").appendChild(document.createElement("p"));
     donationFreq.innerHTML = FreqAmount;
     donationFreq.style.fontWeight = 600;
+    donationFreq.style.backgroundColor = "#D3D3D3";
 
     var ccName = document.querySelector("#credit-card-name").appendChild(document.createElement("p"));
     ccName.innerHTML = creditCardName.value;
     ccName.style.fontWeight = 600;
+    ccName.style.backgroundColor = "#D3D3D3";
 
     var ccNo = document.querySelector("#credit-card-no").appendChild(document.createElement("p"));
     ccNo.innerHTML = creditCardNumber.value;
     ccNo.style.fontWeight = 600;
+    ccNo.style.backgroundColor = "#D3D3D3";
 
     var ccExp = document.querySelector("#exp-date").appendChild(document.createElement("p"));
     ccExp.innerHTML = creditExp.value;
     ccExp.style.fontWeight = 600;
+    ccExp.style.backgroundColor = "#D3D3D3";
 
     var ccCVV = document.querySelector("#cvv").appendChild(document.createElement("p"));
     ccCVV.innerHTML = creditCVV.value;
     ccCVV.style.fontWeight = 600;
-
-
-
-    //    var email = "Email: " + "<br>" + modalBody.appendChild(document.createElement("p"));
-    //    email.innerHTML =mailingEmail.value + "<br>";
-    //    var mailaddress = modalBody.appendChild(document.createElement("p"));
-    //    mailaddress.innerHTML = "Mailing Address: " + "<br>" + mailingAddress.value + " " + "<br>" +  mailingAddress2.value + "<br>" + mailingCity.value + "," + " " + mailingState.value + " " + mailingZip.value + "<br>" + mailingCountry.value + "<br>";
-
-
+    ccCVV.style.backgroundColor = "#D3D3D3";
 }

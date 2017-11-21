@@ -53,6 +53,10 @@ nav.navbar {
 @media (max-width: 991px) {
     #main-nav {
         background-color: rgba(128, 128, 128, .9);
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        width: auto;
     }
 }
 
@@ -111,13 +115,16 @@ nav.navbar {
 }
 
 .hero-content-headers {
-    color: white;
-    text-shadow: 2px 2px 2px;
+    /*    text-shadow: 2px 2px 2px;*/
     text-align: center;
 }
 
 .hero-content-headers h1 {
-    background-color: rgba(128, 128, 128, 0);
+    background-color: rgba(64,161,76, .7);
+    padding: .5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -127,14 +134,20 @@ nav.navbar {
 }
 
 .hero-content-headers h2 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: .5rem;
+    background-color: rgba(64,161,76, .7);
+    border-radius: 20px;
+    color: white;
 }
 
 @media (max-width: 768px) {
     .hero-content-headers h2 {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
         font-size: 1.5rem;
     }
 }
@@ -199,7 +212,7 @@ nav.navbar {
 }
 
 .what-we-do-container a.what-we-do-section-container:hover {
-    background-color: darkgreen;
+    background-color: #40A14C;
     text-decoration: none;
 }
 
@@ -246,7 +259,7 @@ nav.navbar {
     width: 100%;
     height: 100%;
     /*    background-image: url(../img/tennis-court-top-cropped.png);*/
-    background-color: #A9D86D;
+    background-color: #40A14C;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -363,11 +376,22 @@ nav.navbar {
 
 main {
     height: 100vh;
-    background-color: antiquewhite;
+    background-image: url(../img/homepageHERO4-1.jpg);
+    background-size: cover;
+    opacity: 1;
 }
 
 .form-container {
     padding-top: 3rem;
+}
+
+.form-container .carousel{
+    padding: .3rem;
+    background-color: rgba(128, 128, 128, .6);
+}
+
+.carousel-item {
+    color: white;
 }
 
 .form-container h2 {
@@ -407,7 +431,6 @@ main {
 }
 
 .breadcrumb-item {
-    
     font-size: .8rem;
 }
 
@@ -442,135 +465,15 @@ main {
 }
 
 
-/*
-.button-amounts button:focus {
-    background-color: #A9D86D;
-}
-*/
+/*-----------------Footer----------------------*/
 
-
-/*
-fieldset {
-    border: 2px solid black;
-    border-radius: 15px;
-}
-*/
-
-
-/*
-.logo img,
-.logo a {
-    max-width: 150px;
-    padding: 20px 20px 20px 20px;
-    background-color: red;
+.wrapper-footer {
+    background-color: #343a40;
+    height: 100px;
 }
 
-.main-nav a {
-    font-size: 1.1rem;
+footer p {
     color: white;
-}
-
-.nav-soc ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-soc li {
-    padding-left: .25rem;
-    padding-right: .25rem;
-}
-
-.nav-soc img {
-    width: 20px;
-}
-
-.donate-button-main {
-    text-align: right;
-}
-
-.full-background {
-    background-image: url(../img/racket1.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100%;
-    width: 100%;
-    position: relative;
-        border: 3px solid red;
-}
-
-.content-bg-1 {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.bg-headers {
-    color: white;
-}
-
-.bg-headers h1 {
-    margin: 0 0 0 0;
-    padding: 0;
-    
-}
-
-.bg-headers h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.donate-btn {
-
-}
-
-.pagination_main {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     padding: 0;
     margin: 0;
 }
-
-.pagination_main li {
-    
-    padding: 0 .5rem 0 .5rem;
-    margin: 0;
-    font-size: 3rem;
-}
-
-.pagination_main a {
-    padding: 0;
-    margin: 0;
-    
-}
-
-.main-content .pagination_main li {
-    padding: 10px;
-    font-size: 3rem;
-}
-
-.who-we-are-img {
-    width: 100%;
-    height: 100%;
-}
-
-#who-we-are-img {
-    background-image: url(../img/Pre-Ball-Pix1-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-    width: 100%;
-    position: relative;
-}
-
-.who-we-are-content {
-    position: absolute;
-    top: 90%;
-    text-align: center;
-    color: white;
-}
-*/
