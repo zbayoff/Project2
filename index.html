@@ -156,7 +156,7 @@
                                 </ol>
                                 <!----Carousel Bottom Indicators----->
 
-                                <div class="carousel-inner">
+                                <div class="carousel-inner mb-3">
 
                                     <img class="carousel-item active img-fluid" src="assets/img/camp-cropped.jpg">
 
@@ -209,12 +209,195 @@
                     <img src="assets/img/asking.png">
                 </a>
             </section>
+            <div class="modal fade" id="programs-modal" tabindex="-1" role="dialog" aria-labelledby="program-info">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Programs</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!----modal header----->
+
+                        <div class="modal-body">
+                            <div id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Juniors</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="card-body">
+                                            <ul class="program-list">
+                                                <li>Development Level
+                                                    <ul class="program-list-item">
+                                                        <li>Four 8-week sessions: </li>
+                                                        <li>#1 – 9/18-11/12/17</li>
+                                                        <li>#2 – 11/13/17-1/21/18</li>
+                                                        <li>#3 – 1/22-3/25/18</li>
+                                                        <li>#4 – 3/26-5/27/18</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Competition Level
+                                                    <ul class="program-list-item">
+                                                        <li>Two 17 week semesters: </li>
+                                                        <li>#1 - 9/14-12/19/17</li>
+                                                        <li>#2 - 01/29-04/19/18</li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Adults</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="card-body">
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Level</th>
+                                                    <th>Duration</th>
+                                                    <th>Cost</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1.0-2.5</th>
+                                                        <td>12 Weeks</td>
+                                                        <td>$360</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3.0-3.5</th>
+                                                        <td>12 Weeks</td>
+                                                        <td>$540</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">>4.0</th>
+                                                        <td>12 Weeks</td>
+                                                        <td>$540</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Free Programs</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="card-body">
+                                            <h4>Community Tennis Program</h4>
+                                            <p class="mb-3">Youth ages 5-18 receive free tennis instruction from trained coaches in schools and public parks in all 51 New York City council districts year round!</p>
+                                            <button class="btn btn-primary d-flex justify-content-center align-items-center ml-auto mr-auto">More Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----modal body----->
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="cursor: pointer">Close</button>
+                        </div>
+                        <!----modal footer----->
+
+                    </div>
+                    <!----modal content----->
+                </div>
+                <!----modal dialog----->
+            </div>
+            <!----modal----->
             <section class="col-lg-4 col-sm-10 d-flex justify-content-center">
                 <a class="what-we-do-section-container" href="#" data-toggle="modal" data-target="#events-modal">
                     <h3>Events</h3>
                     <img src="assets/img/calendar.png">
                 </a>
             </section>
+            <div class="modal fade" id="events-modal" tabindex="-1" role="dialog" aria-labelledby="program-info">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Events</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!----modal header----->
+
+                        <div class="modal-body">
+                            <nav class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">US Open</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Mayor's Cup</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Gala</a>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="container">
+                                        <h4 class="mb-3">Annual trip to the US OPEN!</h4>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-3">Every year, NYJTL takes ALL of the youth participants to the US Open Qualifying Rounds in Flushing Meadows, Queens. This is a great opportunity for young kids to see the top tennis professionals in the WORLD to play at the highest level. </p>
+                                                <button class="btn btn-info mb-3">More Info</button>
+                                            </div><!----col---->
+                                            <div class="col-12 col-sm-6">
+                                                <img class="events-img" src="assets/img/US_Open_Tennis_a_l.jpg">
+                                            </div><!----col---->
+                                        </div><!----row---->
+                                    </div><!----container---->
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="container">
+                                        <h4 class="mb-3">Mayor's Cup All-Scholastic Tennis Championships</h4>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-3">With more than 600 entries, the Mayors Cup All-Scholastic Tennis Championships is the largest tennis tournament in the nation. Elementary, middle school, and high school students representing public, private, and parochial schools from the entire New York City metropolitan area have been competing against each other since 1988 in both individual and team competitions.</p>
+                                                <button class="btn btn-info mb-3">More Info</button>
+                                            </div><!----col---->
+                                            <div class="col-12 col-sm-6">
+                                                <img class="events-img" src="assets/img/NYJTL_Mayors_Cup_1461_20170611-768x567.jpg">
+                                            </div><!----col---->
+                                        </div><!----row---->
+                                    </div><!----container---->
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div class="container">
+                                        <h4 class="mb-3">Gala</h4>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-3">NYJTL’s annual Summer Gala is held on Wednesday evening, August 2 at the iconic Loeb Boathouse in Central Park, and is a fun and festive evening complete with music, dancing, gondola rides, magicians, and a silent auction. This event annually attracts upwards of 500 attendees from the New York City community, raising funds to support NYJTL’s programs that make a difference in the lives of children across all five boroughs.</p>
+                                                <button class="btn btn-info mb-3">More Info</button>
+                                            </div><!----col---->
+                                            <div class="col-12 col-sm-6">
+                                                <img class="events-img" src="assets/img/Gala-Button.jpg">
+                                            </div><!----col---->
+                                        </div><!----row---->
+                                    </div><!----container---->
+                                </div>
+                            </div>
+                        </div>
+                        <!----modal body----->
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="cursor: pointer">Close</button>
+                        </div>
+                        <!----modal footer----->
+
+                    </div>
+                    <!----modal content----->
+                </div>
+                <!----modal dialog----->
+            </div>
+            <!----modal----->
         </div>
         <!----row----->
     </div>

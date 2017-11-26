@@ -1,3 +1,24 @@
+// Events Modal
+// Add tabs that, when clicked, will display the div below, featuring an image with descriptive text. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Send "Email" when user signs up for newsletter. 
 
     document.querySelector("#news-email-btn").onclick = function (e) {
