@@ -1,18 +1,16 @@
 /*------------Global Styles----------------*/
 
-
 a,
 button {
     cursor: pointer;
 }
 
-	
 .modal {
- overflow-y: auto;
+    overflow-y: auto;
 }
 
 .modal-open {
- overflow: auto;
+    overflow: auto;
 }
 
 
@@ -114,11 +112,7 @@ nav.navbar {
     right: 0;
     text-align: center;
     top: 20%;
-    
-    
 }
-
-
 
 @media (max-width: 768px) {
     .hero-flex h1 {
@@ -155,13 +149,6 @@ nav.navbar {
     text-align: center;
     top: 75%;
 }
-
-
-
-
-
-
-
 
 
 /*----------------Who We Are---------------*/
@@ -394,10 +381,19 @@ nav.navbar {
 }
 
 main {
-    height: 100vh;
+    height: calc(100vh - 105.33px);
     background-image: url(../img/homepageHERO4-1.jpg);
     background-size: cover;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    main {
+        height: calc(100vh - 122.25px);
+        background-image: url(../img/homepageHERO4-1.jpg);
+        background-size: cover;
+        opacity: 1;
+    }
 }
 
 .form-container {
