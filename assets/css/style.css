@@ -13,15 +13,24 @@ button {
     overflow: auto;
 }
 
-
 /*----------------Header---------------*/
 
 nav.navbar {
-    background-color: rgba(128, 128, 128, 0);
+    background-color: rgba(64, 64, 64, 0.8);
+}
+
+.navbar-toggler {
+    background-color: #418FDE;
+    border-color: white;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: white;
+        border-color: white;
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 120px;
     padding: 1rem;
 }
 
@@ -41,14 +50,13 @@ nav.navbar {
 
 @media (max-width: 991px) {
     #main-nav {
-        background-color: rgba(128, 128, 128, .9);
+        /* background-color: rgba(128, 128, 128, .9); */
         padding-left: 15px;
         padding-bottom: 15px;
         padding-right: 15px;
         width: auto;
     }
 }
-
 
 /*----------------Carousel---------------*/
 
@@ -150,7 +158,6 @@ nav.navbar {
     top: 75%;
 }
 
-
 /*----------------Who We Are---------------*/
 
 .content-bg-1 {
@@ -183,7 +190,6 @@ nav.navbar {
     margin-bottom: 4rem;
 }
 
-
 /*----------------What We Do---------------*/
 
 .what-we-do-container h2 {
@@ -210,7 +216,7 @@ nav.navbar {
 }
 
 .what-we-do-container a.what-we-do-section-container:hover {
-    background-color: #40A14C;
+    background-color: #339966;
     text-decoration: none;
 }
 
@@ -250,7 +256,6 @@ nav.navbar {
     width: 100%;
 }
 
-
 /*-------------------Get Involved---------------------*/
 
 .get-involved section {
@@ -265,18 +270,20 @@ nav.navbar {
     width: 100%;
     height: 100%;
     /*    background-image: url(../img/tennis-court-top-cropped.png);*/
-    background-color: #5e965b;
-    background-size: cover;
+    background-color: #339966;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
 }
 
-.tennis-court-img h2 {
+.get-involved h2 {
     position: absolute;
-    z-index: 1;
-    background-color: white;
-    padding: 10px;
-    border-radius: 15px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    color: white;
 }
 
 .get-involved .service-box-container {
@@ -314,7 +321,7 @@ nav.navbar {
 }
 
 .service-box-container h4 {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     color: white;
 }
 
@@ -331,24 +338,18 @@ nav.navbar {
     width: 30px;
 }
 
-
 /*-------------------Donations---------------------*/
+
+#donation-page {
+    height: calc(100vh - 100px);
+}
 
 #donations-header {
     display: flex;
     align-content: center;
     align-items: center;
-    height: 100%;
-    position: relative;
-}
-
-@media (max-width: 768px) {
-    #donations-header {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
+    height: 100px;
+    width: 100%;
 }
 
 #donations-header .logo {
@@ -381,33 +382,31 @@ nav.navbar {
 }
 
 main {
-    height: calc(100vh - 105.33px);
-    background-image: url(../img/homepageHERO4-1.jpg);
-    background-size: cover;
-    opacity: 1;
+    height: 100%;
 }
 
-@media (max-width: 768px) {
-    main {
-        height: calc(100vh - 122.25px);
-        background-image: url(../img/homepageHERO4-1.jpg);
-        background-size: cover;
-        opacity: 1;
+.bg-image-container {
+    height: 60%;
+}
+
+.bg-image {
+    height: 100%;
+    background-image: url(../img/homepageHERO4-1.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    .bg-image {
+        background-position: center;
     }
 }
 
 .form-container {
-    padding-top: 3rem;
+    margin: 1rem 0;
 }
 
 .form-container .carousel {
     padding: .3rem;
-    background-color: rgba(128, 128, 128, .6);
-}
-
-.carousel-item {
-    color: white;
-    text-shadow: 0px 0px 5px #000;
 }
 
 .form-container h2 {
@@ -450,7 +449,6 @@ main {
     font-size: .8rem;
 }
 
-
 /*-------- Donation Modal--------*/
 
 @media (max-width: 768px) {
@@ -470,6 +468,10 @@ main {
     margin-bottom: 1rem;
 }
 
+.button-amounts button.selected, .button-freqs button.selected  {
+    background-color: red;
+}
+
 #personal-info-header {
     font-weight: 700;
 }
@@ -479,7 +481,6 @@ main {
 #payment-info-header {
     font-weight: 700;
 }
-
 
 /*-----------------Footer----------------------*/
 
